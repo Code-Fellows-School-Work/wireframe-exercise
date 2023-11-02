@@ -6,7 +6,6 @@ li {
 }
 
 .row {
-  border: 5px solid #111;
   display: flex;
   gap: 1em;
   padding: 10px;
@@ -14,12 +13,18 @@ li {
 
 .row.across {
   background: #ccc;
-  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+}
+
+.second.across {
+  background: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer {
-  background-color: lightblue;
   padding: 50px;
   background: #ccc;
   flex-direction: row;
@@ -43,3 +48,4 @@ button {
 }
 
 /* used john's lab as a template  */
+/* used ChatGPT to help identify selectors */
