@@ -1,5 +1,9 @@
+.flex.container {
+  flex-direction: column;
+}
+
 li {
-  display:flex;
+  /* display:flex; */
   list-style: none;
   justify-content: center;
   align-items: center;
