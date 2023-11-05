@@ -1,75 +1,69 @@
-* {
-  border: solid black;
-}
-
-.flex-container {
+/* Apply flexbox layout to the body container */
+.container {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Optional: Center the content horizontally */
-  justify-content: center; /* Optional: Center the content vertically */
-  height: 100vh; /* Optional: Set the height to viewport height for full-page column */
-}
-
-nav {
-  display: flex;
-  list-style: none;
-  justify-content: center;
   align-items: center;
-  background-color: gray;
+  justify-content: flex-start;
 }
 
-.row-across {
-  display: flex;
-  flex-direction: row;
-}
-
-/* li {
-  list-style: none;
-  justify-content: center;
-  align-items: center;
-}
-
-.row {
-  display: flex;
-  gap: 1em;
+/* Style the header */
+header {
+  text-align: center;
+  background-color: #333; /* Add background color to the header */
   padding: 10px;
 }
 
-.row.across {
-  background: #ccc;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.second.across {
-  background: #ccc;
+nav.row.across {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+nav.row.across li {
+  flex: 1;
+}
+
+/* Main content layout */
+main {
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
-footer {
-  padding: 50px;
-  background: #ccc;
-  flex-direction: row;
-  margin-top: 1em;
+/* Style the sections */
+section.second.across {
+  text-align: center;
 }
 
+section.row.across {
+  display: flex;
+}
+
+section.row.across > div {
+  flex: 1;
+  padding: 10px;
+}
+
+/* Style the featured section */
 .card {
   display: flex;
-  flex-direction: row;
 }
 
 .card img {
-  width: 150px;
+  width: 50%;
+  max-height: 480px;
+  object-fit: cover;
 }
 
-button {
-  background: black;
-  border:none;
-  padding: 10px;
-  color: #eee;
-} */
+.right-content {
+  flex: 1;
+  padding: 20px;
+}
 
-/* used john's lab as a template  */
-/* used ChatGPT to help identify selectors */
+/* Style the footer */
+footer {
+  background-color: #333; /* Add background color to the footer */
+  padding: 10px;
+}
