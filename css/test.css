@@ -1,8 +1,9 @@
 /* Apply flexbox layout to the body container */
 .container {
-  width: 1000px;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
 }
 
 /* Style the header */
@@ -10,12 +11,11 @@ header {
   text-align: center;
   background-color: #333; /* Add background color to the header */
   padding: 10px;
-  margin: 1em;
 }
 
 nav.row.across {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   list-style: none;
   padding: 0;
@@ -44,7 +44,6 @@ section.row.across {
 section.row.across > div {
   flex: 1;
   padding: 10px;
-  align-items: center;
 }
 
 /* Style the featured section */
