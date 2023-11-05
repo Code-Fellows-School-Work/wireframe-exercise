@@ -1,9 +1,29 @@
-.flex.container {
-  flex-direction: column;
+* {
+  border: solid black;
 }
 
-li {
-  /* display:flex; */
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Optional: Center the content horizontally */
+  justify-content: center; /* Optional: Center the content vertically */
+  height: 100vh; /* Optional: Set the height to viewport height for full-page column */
+}
+
+nav {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+}
+
+.row-across {
+  display: flex;
+  flex-direction: row;
+}
+
+/* li {
   list-style: none;
   justify-content: center;
   align-items: center;
@@ -49,7 +69,7 @@ button {
   border:none;
   padding: 10px;
   color: #eee;
-}
+} */
 
 /* used john's lab as a template  */
 /* used ChatGPT to help identify selectors */
