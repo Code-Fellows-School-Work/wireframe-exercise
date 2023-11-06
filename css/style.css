@@ -55,26 +55,25 @@ section.sub.banners > div {
 /* Style the featured section */
 .card {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding: 15px;
+  margin: auto;
 }
-
-/* .card img {
-  width: 50%;
-  max-height: 480px;
-  object-fit: cover;
-} */
 
 .right-content {
   flex: 1;
   padding: 20px;
+
 }
 
 /* Style the footer */
 footer {
-  width: 100%;
+  width: 940px;
   height: 10%;
   background-color: #333;
   padding: 10px;
+  margin: auto;
+  margin-top: 15px;
 }
 
 button {
