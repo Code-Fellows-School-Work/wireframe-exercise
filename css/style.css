@@ -52,12 +52,11 @@ section.sub.banners > div {
   align-items: center;
 }
 
-/* Style the featured section */
 .card {
   display: flex;
   justify-content: space-between;
-  padding: 15px;
   margin: auto;
+  width: 50%
 }
 
 .right-content {
@@ -78,5 +77,19 @@ footer {
 
 button {
   border-radius: 15px;
+  transition: background-color 350ms;
+}
 
+button:hover {
+  background-color: red;
+}
+
+.sub.banners .card h2 {
+  font-size: 1.25em;
+}
+
+.sub.banners .card p {
+  padding-top: 50px;
+  line-height: 20px;
+  overflow: auto;
 }
